@@ -4,7 +4,13 @@ zsic = ZeroShotImageClassification()
 
 
 #Predictions
-preds = zsic(image="http://images.cocodataset.org/val2017/000000039769.jpg",
+pred1 = zsic(image="http://images.cocodataset.org/val2017/000000039769.jpg",
             candidate_labels=["birds", "lions", "cats","dogs"],
             )
-print(preds)
+
+pred2 = zsic(image="assets/lionandwoman.png",
+             candidate_labels=["lions", "humans"],
+             )
+
+print(pred1)
+print(pred2)

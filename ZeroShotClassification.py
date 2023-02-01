@@ -11,9 +11,7 @@ from sentence_transformers import SentenceTransformer, util
 
 class ZeroShotImageClassification:
 
-    def __init__(self,
-                 *args,
-                 **kwargs):
+    def __init__(self, *args, **kwargs):
 
         """
          Load CLIP models based on either language needs or vision backbone needs
